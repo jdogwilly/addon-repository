@@ -1,6 +1,6 @@
-# Nicholas' Home Assistant Addon Repository
+# Jacob's Home Assistant Addon Repository
 
-## CUPS Addon
+## CUPS Addon - forked from [ncarr/addon-repository](https://github.com/ncarr/addon-repository)
 
 A CUPS server with a variety of included drivers, USB support, support for the Home Assistant installation's TLS certificate, and mDNS broadcasting enabled.
 
