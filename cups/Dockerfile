@@ -16,12 +16,18 @@ RUN apt-get update \
         hpijs-ppds \
         hp-ppd  \
         hplip \
-        printer-driver-foo2zjs \
         gnupg2 \
         lsb-release \
     && echo "deb http://nginx.org/packages/debian `lsb_release -cs` nginx" \
         | tee /etc/apt/sources.list.d/nginx.list \
     && curl -fsSL https://nginx.org/keys/nginx_signing.key | apt-key add - \
+    && curl -o foo2zjs.zip https://github.com/mikerr/foo2zjs/archive/refs/heads/master.zip \
+    && unzip foo2zjs.zip
+    && cd foo2zjs.zip
+    && make uninstall
+    && make
+    && make install
+    && make cups
     && apt-get update \
     && apt-get install nginx nginx-module-njs \
     && apt-get clean -y \
