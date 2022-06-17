@@ -11,9 +11,7 @@
         "amd64",
         "i386"
     ],
-    "startup": "application",
-    "boot": "auto",
-    "usb": "true",
+    "usb": true,
     "homeassistant_api": true,
     "ports": {
         "631/tcp": 631,
