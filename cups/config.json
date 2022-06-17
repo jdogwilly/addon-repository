@@ -1,5 +1,5 @@
 {
-    "name": "CUPS Print Server",
+    "name": "CUPS Print Server", 
     "version": "1.0.0-alpha.26",
     "slug": "cups",
     "description": "A CUPS print server with Avahi installed",
