@@ -36,5 +36,5 @@
         "keyfile": "str",
         "require_ssl": "bool"
     },
-    "image": "jdogwilly/{arch}-addon-cups"
+    "image": "ghcr.io/jdogwilly/{arch}-addon-cups"
 }
