@@ -22,6 +22,7 @@
         "631/udp": "For other devices on the local network to print to this server"
     },
     "ingress": true,
+    "init": false,
     "map": ["ssl"],
     "options": {
         "ssl": false,
